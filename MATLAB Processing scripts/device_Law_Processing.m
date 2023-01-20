@@ -5,7 +5,7 @@ clear all
 % [fileRP,pathRP] = uigetfile("*.csv")
 fileRP = 'data.csv';
 pathRP = '/Users/lg608/Dropbox (Cambridge University)/PhD/Experimental Work/Experimental Data/data/';
-folder = '1114/1114 - Run3/';
+% folder = '1114/1114 - Run3/';
 
 Fpr = 0.02;
 %% Good runs
@@ -14,8 +14,11 @@ Fpr = 0.02;
 fileLC = 'data_loadcell.csv';
 pathLC = pathRP;
 
-dataRP = readtable([pathRP, folder, fileRP], 'Delimiter', ',');
-dataLC = readtable([pathLC, folder, fileLC], 'Delimiter', ',');
+dataRP = readtable([pathRP, fileRP], 'Delimiter', ',');
+dataLC = readtable([pathLC, fileLC], 'Delimiter', ',');
+
+% dataRP = readtable([pathRP, folder, fileRP], 'Delimiter', ',');
+% dataLC = readtable([pathLC, folder, fileLC], 'Delimiter', ',');
 
 data.RP.time = table2array(dataRP(:,1));
 data.RP.targetP = table2array(dataRP(:,2));

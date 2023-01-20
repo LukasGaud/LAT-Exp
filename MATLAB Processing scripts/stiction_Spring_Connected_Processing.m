@@ -16,8 +16,12 @@ folder = '1104/1104 - Run14/';
 
 fileLC = 'data_loadcell.csv';
 % pathLC = '/Users/lg608/Documents/Armstrong/pos-control/';
-dataRP = readtable([pathRP, folder, fileRP], 'Delimiter', ',');
-dataLC = readmatrix([pathRP, folder, fileLC]);
+
+dataRP = readtable([pathRP, fileRP], 'Delimiter', ',');
+dataLC = readmatrix([pathLC, fileLC]);
+
+% dataRP = readtable([pathRP, folder, fileRP], 'Delimiter', ',');
+% dataLC = readmatrix([pathRP, folder, fileLC]);
 
 data.RP.time = table2array(dataRP(:,1));
 data.RP.targetP = table2array(dataRP(:,2));
@@ -73,16 +77,16 @@ f = 6.689489472483746e-04;
 procData.RP.p1 = p1;
 procData.RP.p= p1 + f(1)* procData.RP.pinionP*2048/2/pi;
 
-figure
-subplot(2,1,1)
-hold on
-plot(procData.RP.time, procData.RP.measP)
-plot(procData.RP.time, procData.RP.springP.*procData.RP.p)
-
-subplot(2,1,2)
-hold on
-plot(procData.RP.time, procData.RP.measVp)
-plot(procData.RP.time, procData.RP.angleV.*procData.RP.p)
+% figure
+% subplot(2,1,1)
+% hold on
+% plot(procData.RP.time, procData.RP.measP)
+% plot(procData.RP.time, procData.RP.springP.*procData.RP.p)
+% 
+% subplot(2,1,2)
+% hold on
+% plot(procData.RP.time, procData.RP.measVp)
+% plot(procData.RP.time, procData.RP.angleV.*procData.RP.p)
 
 %% Torque correction
 Fpr = 0.025;

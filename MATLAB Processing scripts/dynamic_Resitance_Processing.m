@@ -5,7 +5,7 @@ clear all
 % [fileRP,pathRP] = uigetfile("*.csv")
 fileRP = 'data.csv';
 pathRP = '/Users/lg608/Dropbox (Cambridge University)/PhD/Experimental Work/Experimental Data/data/';
-folder = '1116/1116 - Run9/';
+% folder = '1116/1116 - Run9/';
 
 offset = -0.015;
 %% Good run
@@ -18,10 +18,13 @@ fileLC = 'data_loadcell.csv'; %place loadcell data in the same folder as data.cs
 % fileRP = 'data.csv';
 % pathRP = '/Users/lg608/Documents/Armstrong/pos-control/';
 
-% fileLC = 'data_loadcell.csv';
-% pathLC = '/Users/lg608/Documents/Armstrong/pos-control/';
-dataRP = readtable([pathRP, folder, fileRP], 'Delimiter', ',');
-dataLC = readtable([pathRP, folder, fileLC]);
+dataRP = readtable([pathRP, fileRP], 'Delimiter', ',');
+dataLC = readtable([pathLC, fileLC], 'Delimiter', ',');
+
+% dataRP = readtable([pathRP, folder, fileRP], 'Delimiter', ',');
+% dataLC = readtable([pathLC, folder, fileLC], 'Delimiter', ',');
+
+
 % data.RP.date = datetime(dataRPClock, 'InputFormat', 'eeeMMMddHH:mm:ssyyyy');
 %
 % dateBad = char(dataLC.Var1);

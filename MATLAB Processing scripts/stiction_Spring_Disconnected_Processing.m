@@ -13,8 +13,14 @@ folder = '1212/1212 - Run2/';
 %% Home Mac
 fileLC = 'data_loadcell.csv';
 % pathLC = '/Users/lg608/Documents/Armstrong/pos-control/';
-dataRP = readtable([pathRP, folder, fileRP], 'Delimiter', ',');
-dataLC = readmatrix([pathRP, folder, fileLC]);
+
+dataRP = readtable([pathRP, fileRP], 'Delimiter', ',');
+dataLC = readmatrix([pathRP, fileLC]);
+
+% dataRP = readtable([pathRP, folder, fileRP], 'Delimiter', ',');
+% dataLC = readtable([pathLC, folder, fileLC], 'Delimiter', ',');
+% dataRP = readtable([pathRP, folder, fileRP], 'Delimiter', ',');
+% dataLC = readmatrix([pathRP, folder, fileLC]);
 
 data.RP.time = table2array(dataRP(:,1));
 data.RP.targetP = table2array(dataRP(:,2));
