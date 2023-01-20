@@ -152,8 +152,8 @@ int main() {
 	double joint_position;
 	double joint_position_p;
 	double target_velocity;
-	double target_position;
-	double target_position_p;
+	double target_position; // target position of the cone
+	double target_position_p; // target position of the carriage
 	double loop_time;
 	double motion_time;
 	double adjust_time;
