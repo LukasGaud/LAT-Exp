@@ -115,8 +115,14 @@ The code contained in this repository for the following experiments: 1) Code to 
 
 ## Useful links
 CTRE - documentation: https://v5.docs.ctr-electronics.com/en/stable/
+
 CTRE - C++ documentation: https://api.ctr-electronics.com/phoenix/release/cpp/
+
 Github troubleshoot - https://docs.github.com/en
+
+Loadcell software manual - https://novatechloadcells.co.uk/products/dscusb
+
+
 
 
 
