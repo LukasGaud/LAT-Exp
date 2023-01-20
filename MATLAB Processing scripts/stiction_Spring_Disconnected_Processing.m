@@ -168,7 +168,7 @@ figure
 Ax = gca;
 hold on
 colorRange = ['k', 'b', 'g', 'm', 'r', 'c'];
-offset = 0.01;
+offset = 0.0s;
 for i = 1:length(CarriageUnique)
     c = colorRange(i);
     if i == 1
