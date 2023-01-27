@@ -2,9 +2,9 @@ close all
 clear all
 %% Office Mac
 % Get the Raspberry Pi file
-% [fileRP,pathRP] = uigetfile("*.csv")
-fileRP = 'data.csv';
-pathRP = '/Users/lg608/Dropbox (Cambridge University)/PhD/Experimental Work/Experimental Data/data/';
+ [fileRP,pathRP] = uigetfile("*.csv")
+%fileRP = 'data.csv';
+%pathRP = '/Users/mcs1000/Dropbox (Cambridge University)/PhD/Experimental Work/Experimental Data/data/';
 % folder = '1114/1114 - Run3/';
 
 Fpr = 0.02;
