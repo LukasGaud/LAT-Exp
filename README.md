@@ -63,7 +63,7 @@ To navigate to the correct folder type
 <img width="195" alt="image" src="https://user-images.githubusercontent.com/92736605/213391352-14f21a5e-3094-4179-80f4-4a00051ec1eb.png">
 2) Commit the changes to git using git desktop
 
-[mcs extra comment: go to github app on laptop (find under "Applications" and double-click);  if it asks "pull origin" do that in order to synchronise between github (cloud) and the laptop;
+[mcs extra comment: go to github app on laptop (find under "Applications" and double-click);  if it asks "pull origin" do that in order to synchronise between github (cloud) and the laptop; it is useful to open up in the browser https://github.com/LukasGaud/LAT-Exp
 
 3) Pull the changes in Raspberry Pi by typing "git pull"
 
